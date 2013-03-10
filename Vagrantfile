@@ -74,6 +74,9 @@ Vagrant::Config.run do |config|
     chef.cookbooks_path = "chef/cookbooks"
     chef.add_recipe "apt"
     chef.add_recipe "nginx"
+    chef.add_recipe "redis"
+    chef.add_recipe "ruby193"
+    chef.add_recipe "gems"
   end
 
   # Enable provisioning with chef server, specifying the chef server URL,
