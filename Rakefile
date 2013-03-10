@@ -1,2 +1,2 @@
-require "./word_analyzer"
+require "./lib/word_analyzer"
 require "resque/tasks"
