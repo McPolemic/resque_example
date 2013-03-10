@@ -73,8 +73,8 @@ Vagrant::Config.run do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = "chef/cookbooks"
     chef.add_recipe "apt"
+    chef.add_recipe "ruby"
     chef.add_recipe "redis"
-    chef.add_recipe "ruby193"
     chef.add_recipe "gems"
   end
 
