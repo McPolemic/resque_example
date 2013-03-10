@@ -1,11 +1,11 @@
 require 'resque'
-require './word_analyzer'
+require './lib/word_analyzer'
 
-idea = ARGV
-puts "Analyzing your idea: #{idea.join(" ")}"
-idea.each do |word|
+words = %w{ this is a series of words to choose from for entropy and goodness abound }
+while true
+  word = words.sample
   puts "Asking for a job to analyze: #{word}"
-  # This is where we would enqueue something
-  # Resque.enqueue(WordAnalyzer, word)
+  $stdout.flush
   WordAnalyzer.create :word => word
+  sleep 1
 end
