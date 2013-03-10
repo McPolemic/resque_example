@@ -1,7 +1,6 @@
 # Resque Example
 
-This contains a small example of resque, together with the plugins resque-status and resque-scheduler, and the default front-end that they sho
-w.
+This contains a small example of resque, together with the plugins resque-status and resque-scheduler, and the default front-end that they show.
 
 # Running
 
